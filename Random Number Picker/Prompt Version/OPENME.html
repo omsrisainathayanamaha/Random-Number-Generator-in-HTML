@@ -1,0 +1,70 @@
+<!doctype html> 
+<html>
+    <head class = "orangebackground" class = "redtext" class = "sansseriffont"> 
+        <style>
+            .orangebackground{
+                background: orangered;
+                background-color: orangered;
+                
+                
+            }
+            .redtext{
+                color: red;
+
+            }
+            .orangetext{
+                color: orangered;
+            }
+            .redbackground{
+                background: red;
+                background-color: red;
+            }
+            .tealbackground{
+                background-color: teal;
+                background: teal;
+            }
+            .tealtext{
+                color: teal;
+            }
+            .bluebackground{
+                background-color: blue;
+                background: blue;
+
+            }
+            .bluetext{
+                color: blue;
+            }
+            .sansseriffont{
+                font-family: sans-serif;
+                font-style: normal;
+                font-weight: 200;
+            }
+          
+            
+            </style>
+        <title>Random Number Generator</title>
+        <script> 
+        
+       var lowest =  prompt("Please enter the lowest number in the your number range.");
+       var highest = prompt("Please enter the highest number in your number range.");
+       var howManyTimes = prompt("Please enter how many times a random number in this range should be picked.");
+       lowest = parseInt(lowest);
+       highest = parseInt(highest);
+       howManyTimes = parseInt(howManyTimes);
+       function randomPicker(highest, lowest, times){
+           for(n = 0; n < times; n++){
+       var picker = Math.floor(Math.random() * highest) + lowest;
+       document.write("Your "+(n+1)+"th number is: "+picker);
+       document.write("<br/>");
+       }
+    }
+       randomPicker(highest, lowest, howManyTimes);
+</script>
+</head>
+<body class = "orangebackground" class = "redtext" class = "sansseriffont">
+</body>
+</html>
+
+
+
+
